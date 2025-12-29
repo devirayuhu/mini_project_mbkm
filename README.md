@@ -26,38 +26,41 @@ Dataset yang digunakan berasal dari **ulasan produk UMKM pada platform Tokopedia
 Aplikasi dikembangkan menggunakan **Streamlit** sehingga mudah digunakan oleh pengguna umum maupun pelaku UMKM.
 
 🔗 **Link Aplikasi:**  
-*(isi link Streamlit kamu di sini)*
+https://sentimen-umkm-app-123.streamlit.app/
 
 ## 📂 Struktur Proyek
 Berikut adalah struktur direktori dari proyek **mini_project_mbkm**:
+
+```text
 mini_project_mbkm/
 ├── dataset/
-│ ├── raw/
-│ │ └── tokopedia-product-reviews-2019.csv
-│ └── processed/
-│ └── data_preprocessed.csv
+│   ├── raw/
+│   │   └── tokopedia-product-reviews-2019.csv
+│   └── processed/
+│       └── data_preprocessed.csv
 │
 ├── models/
-│ ├── logistic_regression/
-│ │ ├── best_model_logistic_regression.pkl
-│ │ └── tfidf_vectorizer.pkl
-│ │
-│ └── lstm/
-│ ├── augmented_minoritas.csv
-│ ├── best_model_lstm.h5
-│ ├── best_model_lstm_tuned.h5
-│ └── tokenizer_sentiment.pkl
+│   ├── logistic_regression/
+│   │   ├── best_model_logistic_regression.pkl
+│   │   └── tfidf_vectorizer.pkl
+│   │
+│   └── lstm/
+│       ├── augmented_minoritas.csv
+│       ├── best_model_lstm.h5
+│       ├── best_model_lstm_tuned.h5
+│       └── tokenizer_sentiment.pkl
 │
 ├── notebooks/
-│ ├── 01_preprocessing_eda.ipynb
-│ ├── 02_ml_logistic_regression.ipynb
-│ └── 03_dl_lstm.ipynb
+│   ├── 01_preprocessing_eda.ipynb
+│   ├── 02_ml_logistic_regression.ipynb
+│   └── 03_dl_lstm.ipynb
 │
 ├── src/
-│ ├── app.py
-│ └── requirements.txt
+│   ├── app.py
+│   └── requirements.txt
 │
 └── README.md
+```
 
 ## 📌 Keterangan Singkat
 - **dataset/**: Berisi data mentah dan data hasil preprocessing ulasan produk UMKM Tokopedia  
